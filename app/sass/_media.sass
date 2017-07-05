@@ -1,0 +1,184 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .header__wrapper
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    & nav
+      margin: 0 auto
+    & > * + *
+      text-align: center
+      margin-top: 1em
+  .header__bottom-b
+    background-color: $brand-color
+    background-image: none
+  .header__bottom-b .header__wrapper nav>ul
+    flex-direction: column
+    padding: 1em 0
+  .header__bottom-b .header__wrapper nav>ul>li.active::after, .header__bottom-b .header__wrapper nav>ul>li:hover::after
+    content: none
+  .header__bottom-b .header__wrapper nav>ul>li
+    height: auto
+    padding: 5px 0
+  .header__bottom-b .header__wrapper nav>ul>li+li
+    margin-left: 0
+  .hasDropdown--default::before
+    position: absolute
+    left: -15px
+  .hasDropdown--default>.my-dropdown
+    top: 20px
+    z-index: 3
+  .hero__moto
+    text-align: center
+  .hero__content,
+  .service__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0
+  .hero__goods,
+  .service__items
+    flex-direction: column
+    align-items: center
+    padding-bottom: 1em
+  .hero__goods .item+.item
+    margin-top: 1em
+    border-left: 1px solid #dfdfdf
+  .section
+    margin-top: 0
+  .section__right
+    display: none
+  .section__title
+    height: auto
+    text-align: center
+  .section__left
+    width: auto
+  .service__items .item,
+  .news__items .item
+    border: 1px solid #dbf2fc
+  .news__items
+    flex-direction: column
+    align-items: center
+  .service__items .item + .item
+    margin-top: 1em
+  .footer
+    height: auto
+    margin-top: 0
+  .footer__wrapper
+    flex-direction: column
+    align-items: flex-start
+  .footer__wrapper>div+div
+    margin-left: 0
+    margin-top: 2em
+    max-width: auto
+  .modal__wrapper
+    width: auto
+    height: auto
+  .modal__header
+    height: auto
+    background-image: none
+    background-color: $brand-color
+    padding-right: 60px
+  .breadcrumbs ul
+    flex-direction: column
+    align-items: flex-start
+  .breadcrumbs ul li + li
+    margin-top: .5em
+  .contacts__wrapper
+    flex-direction: column
+  .contacts__left,
+  .contacts__right
+    width: auto
+    padding: 0
+  .contacts__right
+    margin-top: 2em
+  .goods .item
+    border: 1px solid #dfdfdf
+    flex-direction: column
+  .goods .item + .item
+    margin-top: 1em
+  .goods .item__name
+    align-items: center
+    text-align: center
+    order: 1
+  .goods .item__desc
+    order: 3
+  .goods .item__img
+    order: 2
+  .goods .item__img img
+    width: 100%
+  .goods .item__name button
+    margin-top: 1em
+  .catalog__wrapper,
+  .catalog__items
+    flex-direction: column
+  .catalog__nav,
+  .catalog__right
+    width: auto
+    padding: 0
+  .catalog__items .item
+    width: auto
+  .slider--imgs ul .item img
+    width: 100%
+  .slider ul .item
+    flex-direction: column
+    width: 100% !important
+  .objects__slider .slick-slide>div .item+.item
+    margin-left: 0
+  .objects__slider .slick-slide>div .item
+    margin-top: 2em
+  .slider ul .item__img img
+    width: 100%
+    height: auto
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
