@@ -61,7 +61,7 @@ blockquote
 			width: 25px
 			height: 15px
 			background-color: #fff
-			background-image: url('/img/quotes.png')
+			background-image: url('../img/quotes.png')
 			background-repeat: no-repeat
 		&::before
 			top: -5px
@@ -114,10 +114,10 @@ h3
 	z-index: 8
 	background-repeat: repeat-x
 	&--white
-		background-image: url('/img/svg/Pattern_header_wave.svg')
+		background-image: url('../img/svg/Pattern_header_wave.svg')
 		bottom: -5px
 	&--blue
-		background-image: url('/img/svg/Pattern_footer_wave.svg')
+		background-image: url('../img/svg/Pattern_footer_wave.svg')
 		top: -5px
 		z-index: 99
 .link
@@ -138,7 +138,7 @@ h3
 .close
 	background-color: transparent
 	border: 0
-	background-image: url('/img/close.png')
+	background-image: url('../img/close.png')
 	background-repeat: no-repeat
 	background-position: 50%
 	width: 30px
@@ -162,7 +162,7 @@ h3
 		background-color: $brand-color
 	&--loupe
 		background-color: transparent
-		background-image: url('/img/loupe.png')
+		background-image: url('../img/loupe.png')
 		background-repeat: no-repeat
 		background-size: contain
 		background-position: 50%
@@ -187,7 +187,7 @@ h3
 			height: 25px
 			left: 12px
 			background-color: transparent
-			background-image: url('/img/phone-icon.png')
+			background-image: url('../img/phone-icon.png')
 			background-repeat: no-repeat
 			background-size: contain
 		&:hover
@@ -210,7 +210,7 @@ h3
 			height: 25px
 			left: 12px
 			background-color: transparent
-			background-image: url('/img/phone-icon-blue.png')
+			background-image: url('../img/phone-icon-blue.png')
 			background-repeat: no-repeat
 			background-size: contain
 		&:hover
@@ -231,7 +231,7 @@ h3
 			width: 10px
 			height: 10px
 			background-color: transparent
-			background-image: url('/img/dropdown-arrow.png')
+			background-image: url('../img/dropdown-arrow.png')
 			background-repeat: no-repeat
 			background-position: 50%
 		&:hover
@@ -293,7 +293,7 @@ h3
 	&__bottom-b
 		position: relative
 		min-height: 62px
-		background-image: url('/img/svg/Pattern_header.svg')
+		background-image: url('../img/svg/Pattern_header.svg')
 		background-repeat: repeat-x
 		& .header__wrapper
 			padding: 0
@@ -368,7 +368,7 @@ h3
 			position: relative
 			width: inherit
 			height: 5px
-			background-image: url('/img/svg/Pattern_volna.svg')
+			background-image: url('../img/svg/Pattern_volna.svg')
 			background-repeat: repeat-x
 			margin-top: 5px
 // FOOTER END
@@ -389,7 +389,7 @@ h3
 		width: 540px
 		height: 320px
 		background-color: $accent-color-light
-		background-image: url('/img/modal-bg.jpg')
+		background-image: url('../img/modal-bg.jpg')
 		background-repeat: no-repeat
 	&__header
 		display: flex
@@ -397,7 +397,7 @@ h3
 		height: 62px
 		justify-content: center
 		background-color: $accent-color-light
-		background-image: url('/img/modal-header-bg.png')
+		background-image: url('../img/modal-header-bg.png')
 		background-size: contain
 		padding: 15px 18px
 		& .close
@@ -432,7 +432,7 @@ h3
 // HERO
 .hero
 	margin-top: -5px
-	background-image: url('/img/main-bg.jpg')
+	background-image: url('../img/main-bg.jpg')
 	background-repeat: no-repeat
 	background-position: 50% 0%
 	&__bg
@@ -523,7 +523,7 @@ h3
 
 // SERVICES SECTION
 .service
-	background-image: url(/img/svg/Pattern_volna.svg)
+	background-image: url(../img/svg/Pattern_volna.svg)
 	background-repeat: repeat-x repeat-y
 	&__content
 		padding: 0 50px
@@ -565,16 +565,19 @@ h3
 
 // NEWS SECTION
 .news
-	background-image: url(/img/svg/Pattern_volna.svg)
+	background-image: url(../img/svg/Pattern_volna.svg)
 	background-repeat: repeat
 	&__items
 		display: flex
+		flex-flow: row wrap
 		margin: 0 -15px
 		& .item
 			display: flex
 			flex-direction: column
 			margin: 0 15px 30px
 			background-color: #fff
+			min-width: 262px
+			width: calc(25% - 30px)
 			&__img
 				& img
 					width: 100%
@@ -644,7 +647,7 @@ h3
 			padding: 0
 			border: none
 			background-color: transparent
-			background-image: url('/img/slider-arrow.png')
+			background-image: url('../img/slider-arrow.png')
 			background-repeat: no-repeat
 			background-position: center
 			transform: rotate(-90deg)
@@ -698,7 +701,7 @@ h3
 			height: 17px
 			border: none
 			background-color: transparent
-			background-image: url('/img/slider-arrow.png')
+			background-image: url('../img/slider-arrow.png')
 			background-repeat: no-repeat
 			background-position: center
 		& .slick-prev
@@ -762,7 +765,7 @@ h3
 		justify-content: center
 		align-items: center
 		background-color: transparent
-		background-image: url('/img/svg/Pattern_leftMenu.svg')
+		background-image: url('../img/svg/Pattern_leftMenu.svg')
 		background-repeat: repeat-x
 		height: 67px
 		z-index: 9
@@ -793,7 +796,7 @@ h3
 				position: relative
 				padding: 0 20px
 				height: 67px
-				background-image: url('/img/svg/Pattern_leftMenu.svg')
+				background-image: url('../img/svg/Pattern_leftMenu.svg')
 				background-repeat: repeat-x
 				margin-top: -3px
 				z-index: 8
@@ -882,7 +885,7 @@ h3
 			position: absolute
 			width: 100%
 			height: 3.53px
-			background-image: url('/img/svg/Pattern_volna_grey.svg')
+			background-image: url('../img/svg/Pattern_volna_grey.svg')
 			background-repeat: repeat-x
 		&::before
 			top: 0
@@ -920,7 +923,7 @@ h3
 			padding: 0
 			border: none
 			background-color: transparent
-			background-image: url('/img/slider-arrow.png')
+			background-image: url('../img/slider-arrow.png')
 			background-repeat: no-repeat
 			background-position: center
 			transform: rotate(-90deg)
