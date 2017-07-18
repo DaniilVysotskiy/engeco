@@ -628,8 +628,6 @@ h3
 				margin-top: 1em
 	&--imgs
 		& ul
-			display: flex
-			align-items: center
 			list-style: none
 			padding: 0 30px
 			margin: 0
@@ -650,13 +648,15 @@ h3
 			background-image: url('../img/slider-arrow.png')
 			background-repeat: no-repeat
 			background-position: center
-			transform: rotate(-90deg)
 		& .slick-prev
-			left: 0
+      left: 0
+      top: 50%
+      transform: translateY(-50%) rotate(-90deg)
 		& .slick-next
-			transform-origin: 10px 60%
-			transform: rotate(90deg)
-			right: 3px
+      right: 5px
+      bottom: 50%
+      transform-origin: 10px 60%
+      transform: translateY(50%) rotate(90deg)
 	&--vertical
 		flex-direction: column
 		margin-bottom: 3em
@@ -667,9 +667,6 @@ h3
 			& .item
 				display: flex
 				background-color: #F6F4F0
-				filter: opacity(.4)
-				&.slick-current
-					filter: opacity(1)
 				& + .item
 					border-top: 1px solid #E0E0E0
 				&__img
@@ -709,6 +706,10 @@ h3
 		& .slick-next
 			transform-origin: 10px 60%
 			transform: rotate(180deg)
+  & .slick-slide
+    filter: opacity(.4)
+  & .slick-current
+    filter: opacity(1)
 // SLIDER END
 
 // BREADCRUMBS
@@ -1039,6 +1040,7 @@ h3
 				margin-top: auto
 // GOODS END
 
-
+.catalog__wrapper img
+  width: 100%
 
 @import "media" // Всегда в конце

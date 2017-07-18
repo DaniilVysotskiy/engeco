@@ -76,6 +76,7 @@ function initSliders(){
 
 	$('[data-item="slider-imgs"]').slick({
 		accessibility: true,
+    draggable: false,
 		arrows: true,
 		dots: false,
 		slidesToShow: 4,
